@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cerebri — Private AI Flashcards for iPhone</title>
+<meta name="description" content="Turn any PDF, photo, or lecture recording into flashcards — entirely on your iPhone. No uploads, no cloud AI, no account. One-time $6.99, no subscription.">
+<meta property="og:title" content="Cerebri — Private AI Flashcards">
+<meta property="og:description" content="Turn any PDF, photo, or lecture recording into flashcards — entirely on your iPhone. No uploads, no account, no subscription.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --ink:#17141f; --ink-soft:#4a4458; --ink-faint:#756e85;
+    --ground:#fbfafd; --surface:#fff; --rule:#e6e2f0;
+    --brand:#6c4fe8; --brand-deep:#4b2eb9; --brand-lift:#7b5bf5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#ece9f7; --ink-soft:#b7b0cc; --ink-faint:#8d86a3;
+      --ground:#100e1b; --surface:#1a1730; --rule:#2c2748;
+      --brand:#a48cff; --brand-deep:#6c4fe8; --brand-lift:#b9a6ff;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);
+    font:16.5px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:52rem;margin:0 auto;padding:0 1.5rem}
+  a{color:var(--brand)}
+
+  header.hero{
+    background:linear-gradient(165deg,var(--brand-lift),var(--brand-deep));
+    color:#fff;padding:5rem 0 4.5rem;text-align:center}
+  header.hero .wrap{display:flex;flex-direction:column;align-items:center;gap:1rem}
+  .mark{width:88px;height:88px;border-radius:21px;display:block;
+    box-shadow:0 8px 28px rgba(0,0,0,.28)}
+  h1{font-size:clamp(2.4rem,7vw,3.4rem);margin:0;letter-spacing:-.03em;line-height:1.05;text-wrap:balance}
+  .tagline{font-size:1.2rem;opacity:.95;margin:0;max-width:34rem;text-wrap:balance}
+  .price-pill{margin-top:.5rem;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);
+    border-radius:999px;padding:.5rem 1.1rem;font-size:.92rem;font-weight:600}
+
+  section{padding:3.5rem 0;border-bottom:1px solid var(--rule)}
+  h2{font-size:1.6rem;letter-spacing:-.02em;margin:0 0 .5rem;text-wrap:balance}
+  .lede{color:var(--ink-soft);margin:0 0 2rem;max-width:38rem}
+
+  .grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr))}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:1.4rem}
+  .card h3{margin:.2rem 0 .4rem;font-size:1.05rem}
+  .card p{margin:0;color:var(--ink-soft);font-size:.95rem}
+  .glyph{width:26px;height:26px;stroke:var(--brand);fill:none;stroke-width:1.6;
+    stroke-linecap:round;stroke-linejoin:round}
+
+  .privacy{background:var(--surface);border:1px solid var(--rule);
+    border-left:3px solid var(--brand);border-radius:0 12px 12px 0;padding:1.5rem}
+  .privacy p{margin:.5rem 0 0;color:var(--ink-soft)}
+  .privacy strong{color:var(--ink)}
+
+  table{width:100%;border-collapse:collapse;font-size:.95rem}
+  th,td{text-align:left;padding:.7rem 0;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+  td:first-child{padding-right:1.5rem;color:var(--ink-soft)}
+
+  footer{padding:2.5rem 0 4rem;color:var(--ink-faint);font-size:.9rem;text-align:center}
+  footer a{margin:0 .6rem;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="mark" src="icon.png" alt="Cerebri app icon" width="88" height="88">
+    <h1>Cerebri</h1>
+    <p class="tagline">Turn any PDF, photo, or lecture recording into flashcards — entirely on your iPhone.</p>
+    <div class="price-pill">$6.99 once · No subscription</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>Your material never leaves your hands</h2>
+    <p class="lede">Every other AI flashcard app uploads your notes to a server. Cerebri doesn't have one.</p>
+    <div class="privacy">
+      <p><strong>There is no Cerebri server.</strong> Flashcard generation, the AI tutor, handwriting recognition and lecture transcription all run on your device using Apple Intelligence. Nothing you import is uploaded — not your notes, not your recordings, not your questions.</p>
+      <p>No account. No tracking. No analytics. Works fully offline.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card">
+        <svg class="glyph" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
+        <h3>Capture anything</h3>
+        <p>PDFs and Word docs, photos of handwritten notes, or a recording of the whole lecture. All converted on-device.</p>
+      </div>
+      <div class="card">
+        <svg class="glyph" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3.2-6.9"/><path d="M21 4v5h-5"/><path d="M12 8v4l2.5 2"/></svg>
+        <h3>Spaced repetition</h3>
+        <p>The proven SM-2 algorithm schedules each card just before you'd forget it. Skip what you know.</p>
+      </div>
+      <div class="card">
+        <svg class="glyph" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>
+        <h3>A tutor with no usage cap</h3>
+        <p>Miss a card and get a clear explanation instantly. Go deeper with a tutor that knows your whole deck — unlimited, no per-question fees.</p>
+      </div>
+      <div class="card">
+        <svg class="glyph" viewBox="0 0 24 24"><path d="M6 9V3h12v6"/><path d="M6 18H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/></svg>
+        <h3>Study sheets that are yours</h3>
+        <p>Export any deck to Quizlet, Anki, or a printable PDF — with your saved tutor explanations printed under each answer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's free, what's paid</h2>
+    <p class="lede">One payment unlocks everything, permanently. No subscription, no per-scan fees, no AI usage limits.</p>
+    <table>
+      <tr><th>Free</th><th>$6.99 one-time</th></tr>
+      <tr>
+        <td>Unlimited decks and manual cards<br>Card-flip study<br>PDF &amp; Word → flashcards<br>Tutor explanation on every missed card<br>Export to Quizlet, Anki, CSV and PDF</td>
+        <td>Spaced repetition scheduling<br>Photos → flashcards<br>Audio &amp; video → flashcards<br>Unlimited deck-wide tutor chat</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p class="lede">Questions, bugs, or feature requests — email and I'll get back to you.</p>
+    <p><strong><a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a></strong></p>
+    <table>
+      <tr><th>Requirement</th><th>Detail</th></tr>
+      <tr><td>iOS version</td><td>iOS 26 or later</td></tr>
+      <tr><td>AI features</td><td>Require a device with Apple Intelligence (iPhone 15 Pro or newer). On other devices, manual card creation and study work normally.</td></tr>
+      <tr><td>Sync</td><td>Optional, through your own private iCloud account.</td></tr>
+    </table>
+  </section>
+
+</div>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a>·<a href="terms.html">Terms of Use</a>
+  <p>© 2026 Cerebri</p>
+</footer>
+
+</body>
+</html>
