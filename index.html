@@ -78,6 +78,12 @@
   .shot.pad img{border-radius:18px}
   .shot figcaption{margin:.6rem 0 0;font-size:.82rem;color:var(--ink-faint)}
   .shot-note{margin:0;color:var(--ink-faint);font-size:.88rem}
+  /* iPhone Duo's inner display is landscape, so these sit in a grid instead of
+     the scrolling strip: two across on a wide screen, stacked on a phone. */
+  .duo-shots{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,21rem),1fr))}
+  .shot.duo{margin:0}           /* drop the browser's 40px figure margin so the shot fills its column */
+  .shot.duo .glass{border-radius:20px}
+  .shot.duo img{border-radius:15px}
 
   footer{padding:2.5rem 0 4rem;color:var(--ink-faint);font-size:.9rem;text-align:center}
   footer a{margin:0 .6rem;white-space:nowrap}
@@ -132,6 +138,23 @@
       </figure>
     </div>
     <p class="shot-note">Scroll for more →</p>
+  </section>
+
+  <section id="iphone-duo">
+    <h2>Ready for iPhone Duo</h2>
+    <p class="lede">Folded, Cerebri works just like it does on any iPhone. Unfolded, your library and the open deck sit side by side.</p>
+    <div class="duo-shots">
+      <figure class="shot duo">
+        <div class="glass"><img src="shots/duo-1-deck.webp" width="960" height="675" loading="lazy" decoding="async"
+          alt="Cerebri on iPhone Duo, unfolded: the library sidebar beside the World Capitals deck and its Study this deck button."></div>
+        <figcaption>Your library beside the open deck</figcaption>
+      </figure>
+      <figure class="shot duo">
+        <div class="glass"><img src="shots/duo-2-folder.webp" width="960" height="675" loading="lazy" decoding="async"
+          alt="Cerebri on iPhone Duo, unfolded: the library sidebar beside the Sample Decks folder and its five decks."></div>
+        <figcaption>Every folder one tap away</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section>
